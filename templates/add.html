@@ -1,11 +1,22 @@
 {% extends 'base.html' %}
 {% block body %}
+<div class="container">
+    <div class="row">
+          <div class="col-md-4">
+          </div>
+         <div class="col-md-8">
+             <h2 style="color:red;">ADD A NEW MOVIE</h2>
 <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
-    <input type="text" name="name" placeholder="Enter your movie name"><br>
-    <input type="text" name="desc" placeholder="Enter movie description"><br>
-    <input type="text" name="year" placeholder="Enter year of movie release"><br>
-    <input type="file" name="img"><br>
-    <input type="submit">
+    <input class="mt-3" type="text" name="name" placeholder="Enter your movie name"><br>
+    <input class="mt-3" type="text" name="desc" placeholder="Enter movie description"><br>
+    <input class="mt-3" type="text" name="year" placeholder="Enter year of movie release"><br>
+    <input class="mt-3" type="file" name="img"><br>
+    <input class="mt-3" type="submit">
 </form>
+         </div>
+ <div class="col-md-4">
+          </div>
+    </div>
+    </div>
 {% endblock %}

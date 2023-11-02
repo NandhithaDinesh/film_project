@@ -24,6 +24,7 @@ def add_movie(request):
         img=request.FILES['img']
         movie=Movies(name=name,desc=desc,year=year,img=img)
         movie.save()
+        return redirect('/')
     return render(request,'add.html')
 def update(request,id):
     movie=Movies.objects.get(id=id)

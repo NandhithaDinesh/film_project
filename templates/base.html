@@ -10,10 +10,10 @@
 <body>
 <!-- Image and text -->
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="{% url 'filmsapp:index' %}">
     Online Movie Store
   </a>
-    <a class="navbar-brand" href="add.html">
+    <a class="navbar-brand" href="{% url 'filmsapp:add_movie' %}">
    Add
   </a>
 </nav>
